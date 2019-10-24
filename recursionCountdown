@@ -1,0 +1,19 @@
+//Only change code below this line
+
+//Basic JavaScript: Use Recursion to Create a Countdown
+
+//source: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-recursion-to-create-a-countdown
+
+function countdown(myArray, n){
+  if(n < 1){
+    return myArray;
+  } else {
+    myArray.push(n);
+    countdown(myArray, n - 1);
+    return myArray;
+  }
+}
+
+
+var anArray = [];
+console.log(countdown(anArray,4));
